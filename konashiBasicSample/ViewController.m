@@ -18,9 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
     [Konashi initialize];
-    
     [Konashi addObserver:self selector:@selector(ready) name:KonashiEventReadyToUseNotification];
 }
 
@@ -35,7 +33,6 @@
 
 - (void)ready
 {
-
     [Konashi pinMode:KonashiLED2 mode:KonashiPinModeOutput];
     [Konashi digitalWrite:KonashiLED2 value:KonashiLevelHigh];
 }
