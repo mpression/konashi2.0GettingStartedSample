@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)find:(id)sender;
+
 
 @end
 
